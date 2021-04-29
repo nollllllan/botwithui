@@ -68,7 +68,7 @@ namespace botwithui
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(165, 20);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "ODIzMjM5MDk0NzI4NTIzNzg2.YFd7Jw.7KVcPKBjnD4r8cp5IPRDLYbfFjg";
+            this.textBox1.Text = Registry.GetValue("HKEY_CURRENT_USER\\SOFTWARE\\blek", "TOKEN", "token").ToString();
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
