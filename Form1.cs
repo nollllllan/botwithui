@@ -16,6 +16,22 @@ namespace botwithui
         public Form1()
         {
             InitializeComponent();
+            try
+            {
+                var savedToken = Registry.GetValue("HKEY_CURRENT_USER\\SOFTWARE\\blek", "TOKEN", "token").ToString();
+            }
+            catch
+            {
+                Registry.SetValue("HKEY_CURRENT_USER\\SOFTWARE\\blek", "TOKEN", "");
+                savedToken = "token";
+            }
+
+            if (savedToken == null)
+            {
+                Registry.SetValue("HKEY_CURRENT_USER\\SOFTWARE\\blek", "TOKEN", "");
+                savedToken = "token";
+            }
+            this.textBox1.Text = savedToken;
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

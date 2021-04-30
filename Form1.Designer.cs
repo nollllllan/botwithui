@@ -1,5 +1,6 @@
 ﻿
 using Microsoft.Win32;
+using System;
 
 namespace botwithui
 {
@@ -29,7 +30,7 @@ namespace botwithui
         /// Требуемый метод для поддержки конструктора — не изменяйте 
         /// содержимое этого метода с помощью редактора кода.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -68,7 +69,7 @@ namespace botwithui
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(165, 20);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = Registry.GetValue("HKEY_CURRENT_USER\\SOFTWARE\\blek", "TOKEN", "token").ToString();
+            //this.textBox1.Text = savedToken;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
@@ -255,6 +256,7 @@ namespace botwithui
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private string savedToken;
     }
 }
 

@@ -48,7 +48,6 @@ namespace botwithui
             this.label1.Size = new System.Drawing.Size(105, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "Blek\'s discord bot";
-            //if (this.lang == 1) { this.label1.Text = "Дискорд бот блека"; }
             // 
             // label2
             // 
@@ -59,17 +58,15 @@ namespace botwithui
             this.label2.Size = new System.Drawing.Size(88, 26);
             this.label2.TabIndex = 2;
             this.label2.Text = "Version: 1.3.2\r\nBuild version: 1.0";
-            //if (this.lang == 1) { this.label2.Text = "Версия: 1.3.2\r\nВерсия сборки: 1.0"; }
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(23, 76);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 13);
+            this.label3.Size = new System.Drawing.Size(160, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "Released under GNUv.3 license";
-            //if (this.lang == 1) { this.label3.Text = "Распостраняется под лицензией GNUv.3"; }
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // button1
@@ -82,6 +79,7 @@ namespace botwithui
             this.button1.TabIndex = 4;
             this.button1.Text = "Github";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -110,7 +108,6 @@ namespace botwithui
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "About author";
-            //if (this.lang == 1) { this.Text = "Про автора"; }
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

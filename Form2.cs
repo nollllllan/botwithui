@@ -21,5 +21,10 @@ namespace botwithui
         {
             System.Diagnostics.Process.Start("https://www.gnu.org/licenses/gpl-3.0.en.html");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/b1ek/botwithui");
+        }
     }
 }
