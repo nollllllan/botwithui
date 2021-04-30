@@ -70,6 +70,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -133,6 +134,12 @@
     <None Include="GitHub-Mark-20px.png" />
     <None Include="GitHub-Mark-32px.png" />
     <None Include="lang.png" />
+    <Content Include="Language\English.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Language\Russian.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="senko_loaf_yGp_icon.ico" />
     <EmbeddedResource Include="settings.png" />
     <EmbeddedResource Include="about.txt" />
@@ -151,5 +158,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

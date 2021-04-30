@@ -32,36 +32,36 @@ namespace botwithui
         /// </summary>
         public void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.BotSettingsLabel = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.StartButton = new System.Windows.Forms.Button();
+            this.ConfigGroupBox = new System.Windows.Forms.GroupBox();
+            this.CmdOutputCheckBox = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BotConsoleGroupBox = new System.Windows.Forms.GroupBox();
+            this.SaveLogButton = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.InsertYourTokenLabel = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.ConfigGroupBox.SuspendLayout();
+            this.BotConsoleGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // BotSettingsLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Font = new System.Drawing.Font("Segoe Print", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(217, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(260, 47);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Bot control panel";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BotSettingsLabel.AutoSize = true;
+            this.BotSettingsLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BotSettingsLabel.Font = new System.Drawing.Font("Segoe Print", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BotSettingsLabel.Location = new System.Drawing.Point(217, 35);
+            this.BotSettingsLabel.Name = "BotSettingsLabel";
+            this.BotSettingsLabel.Size = new System.Drawing.Size(260, 47);
+            this.BotSettingsLabel.TabIndex = 0;
+            this.BotSettingsLabel.Text = "Bot control panel";
+            this.BotSettingsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox1
             // 
@@ -69,41 +69,39 @@ namespace botwithui
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(165, 20);
             this.textBox1.TabIndex = 1;
-            //this.textBox1.Text = savedToken;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // button1
+            // StartButton
             // 
-            this.button1.Font = new System.Drawing.Font("Bahnschrift SemiLight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(398, 152);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(74, 32);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Start!";
-            this.button1.UseVisualStyleBackColor = true;
+            this.StartButton.Font = new System.Drawing.Font("Bahnschrift SemiLight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.StartButton.Location = new System.Drawing.Point(398, 152);
+            this.StartButton.Name = "StartButton";
+            this.StartButton.Size = new System.Drawing.Size(74, 32);
+            this.StartButton.TabIndex = 2;
+            this.StartButton.Text = "Start!";
+            this.StartButton.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // ConfigGroupBox
             // 
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Location = new System.Drawing.Point(220, 202);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(242, 103);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Bot config";
+            this.ConfigGroupBox.Controls.Add(this.CmdOutputCheckBox);
+            this.ConfigGroupBox.Controls.Add(this.checkBox1);
+            this.ConfigGroupBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ConfigGroupBox.Location = new System.Drawing.Point(220, 202);
+            this.ConfigGroupBox.Name = "ConfigGroupBox";
+            this.ConfigGroupBox.Size = new System.Drawing.Size(242, 103);
+            this.ConfigGroupBox.TabIndex = 3;
+            this.ConfigGroupBox.TabStop = false;
+            this.ConfigGroupBox.Text = "Bot config";
             // 
-            // checkBox2
+            // CmdOutputCheckBox
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(7, 44);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(119, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Cmd output window";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            this.CmdOutputCheckBox.AutoSize = true;
+            this.CmdOutputCheckBox.Location = new System.Drawing.Point(7, 44);
+            this.CmdOutputCheckBox.Name = "CmdOutputCheckBox";
+            this.CmdOutputCheckBox.Size = new System.Drawing.Size(119, 17);
+            this.CmdOutputCheckBox.TabIndex = 1;
+            this.CmdOutputCheckBox.Text = "Cmd output window";
+            this.CmdOutputCheckBox.UseVisualStyleBackColor = true;
             // 
             // checkBox1
             // 
@@ -116,28 +114,27 @@ namespace botwithui
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "!ping";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // groupBox2
+            // BotConsoleGroupBox
             // 
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Location = new System.Drawing.Point(220, 311);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(252, 184);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Bot console";
+            this.BotConsoleGroupBox.Controls.Add(this.SaveLogButton);
+            this.BotConsoleGroupBox.Controls.Add(this.textBox2);
+            this.BotConsoleGroupBox.Controls.Add(this.pictureBox1);
+            this.BotConsoleGroupBox.Location = new System.Drawing.Point(220, 311);
+            this.BotConsoleGroupBox.Name = "BotConsoleGroupBox";
+            this.BotConsoleGroupBox.Size = new System.Drawing.Size(252, 184);
+            this.BotConsoleGroupBox.TabIndex = 4;
+            this.BotConsoleGroupBox.TabStop = false;
+            this.BotConsoleGroupBox.Text = "Bot console";
             // 
-            // button2
+            // SaveLogButton
             // 
-            this.button2.Location = new System.Drawing.Point(6, 143);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 25);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Save console output as file...";
-            this.button2.UseVisualStyleBackColor = true;
+            this.SaveLogButton.Location = new System.Drawing.Point(6, 143);
+            this.SaveLogButton.Name = "SaveLogButton";
+            this.SaveLogButton.Size = new System.Drawing.Size(165, 25);
+            this.SaveLogButton.TabIndex = 6;
+            this.SaveLogButton.Text = "Save console output as file...";
+            this.SaveLogButton.UseVisualStyleBackColor = true;
             // 
             // textBox2
             // 
@@ -161,14 +158,14 @@ namespace botwithui
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label2
+            // InsertYourTokenLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(224, 148);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Insert your bot token here:";
+            this.InsertYourTokenLabel.AutoSize = true;
+            this.InsertYourTokenLabel.Location = new System.Drawing.Point(224, 148);
+            this.InsertYourTokenLabel.Name = "InsertYourTokenLabel";
+            this.InsertYourTokenLabel.Size = new System.Drawing.Size(131, 13);
+            this.InsertYourTokenLabel.TabIndex = 7;
+            this.InsertYourTokenLabel.Text = "Insert your bot token here:";
             // 
             // linkLabel1
             // 
@@ -217,12 +214,12 @@ namespace botwithui
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.InsertYourTokenLabel);
+            this.Controls.Add(this.BotConsoleGroupBox);
+            this.Controls.Add(this.ConfigGroupBox);
+            this.Controls.Add(this.StartButton);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.BotSettingsLabel);
             this.DoubleBuffered = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -230,10 +227,10 @@ namespace botwithui
             this.Opacity = 0.98D;
             this.ShowIcon = false;
             this.Text = "Bot control panel";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.ConfigGroupBox.ResumeLayout(false);
+            this.ConfigGroupBox.PerformLayout();
+            this.BotConsoleGroupBox.ResumeLayout(false);
+            this.BotConsoleGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -242,18 +239,18 @@ namespace botwithui
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label BotSettingsLabel;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button StartButton;
+        private System.Windows.Forms.GroupBox ConfigGroupBox;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox BotConsoleGroupBox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button SaveLogButton;
+        private System.Windows.Forms.Label InsertYourTokenLabel;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox CmdOutputCheckBox;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private string savedToken;

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BotSettingsLabel>Настройки бота</BotSettingsLabel>
+  <InsertYourTokenLabel>Вставьте ваш токен: </InsertYourTokenLabel>
+  <ConfigGroupBox>Конфиг</ConfigGroupBox>
+  <BotConsoleGroupBox>Консоль бота</BotConsoleGroupBox>
+  <StartButton>Start!</StartButton>
+  <SaveLogButton>Сохранить лог консоли...</SaveLogButton>
+  <CmdOutputCheckBox>Отдельное окно консоли</CmdOutputCheckBox>
+  <FormText>Настройки бота</FormText>
+</Language>
